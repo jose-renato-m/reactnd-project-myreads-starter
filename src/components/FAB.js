@@ -7,7 +7,8 @@ import React, {Component} from 'react';
                     <button onClick={() => this.setState({ showSearchPage: true })}>
                         Add a book
                     </button>
-                </div>)
+                </div>
+            );
         }    
     }
 
