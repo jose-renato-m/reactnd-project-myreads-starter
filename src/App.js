@@ -45,9 +45,6 @@ class BooksApp extends React.Component {
             <div className="list-books-content">
               <div>
 
-                    </ol>
-                  </div>
-                </div>
               </div>
             </div>
             <div className="open-search">
