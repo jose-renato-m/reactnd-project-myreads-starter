@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 
     class FAB extends Component {
         render() {
-            return (<h1></h1>)
+            return (<div className="open-search">
+            <button onClick={() => this.setState({ showSearchPage: true })}>Add a book</button>
+          </div>)
         }    
     }
 
