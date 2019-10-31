@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Shelf from './components/Shelf';
 
     class Home extends Component {
        render() {
