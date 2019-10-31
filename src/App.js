@@ -3,17 +3,17 @@ import {Switch,Route} from 'react-router-dom';
 import Home from './views/Home';
 import Search from './views/Search';
 import './App.css';
-class BooksApp extends React.Component {
-  render() {
-    return (
-      <div className="app">
-      <Switch>
-        <Route exact to={'/'} Component={Home} />
-        <Route exact to={'/search'} Component={Search} />
-      </Switch>        
-      </div>
-    )
+  class BooksApp extends React.Component {
+    render() {
+      return (
+        <div className="app">
+        <Switch>
+          <Route exact to={'/'} Component={Home} />
+          <Route exact to={'/search'} Component={Search} />
+        </Switch>        
+        </div>
+      )
+    }
   }
-}
 
 export default BooksApp
