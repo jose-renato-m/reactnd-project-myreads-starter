@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch,Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Home from './views/Home';
 import Search from './views/Search';
 import './App.css';
@@ -8,8 +8,8 @@ import './App.css';
       return (
         <div className="app">
         <Switch>
-          <Route exact path={'/'} Component={Home} />
-          <Route exact path={'/search'} Component={Search} />
+          <Route exact path="/" Component={Home} />
+          <Route path="/search" Component={Search} />
         </Switch>        
         </div>
       )
