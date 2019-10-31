@@ -8,8 +8,8 @@ import './App.css';
       return (
         <div className="app">
         <Switch>
-          <Route exact to={'/'} Component={Home} />
-          <Route exact to={'/search'} Component={Search} />
+          <Route exact path={'/'} Component={Home} />
+          <Route exact path={'/search'} Component={Search} />
         </Switch>        
         </div>
       )
