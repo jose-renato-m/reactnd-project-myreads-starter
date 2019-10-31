@@ -2,8 +2,8 @@ import React from 'react';
 import {Switch.Route} from 'react-router-dom';
 // import * as BooksAPI from './BooksAPI'
 import Home from './views/Home';
-import './App.css'
-
+import Search from './views/Search';
+import './App.css';
 class BooksApp extends React.Component {
   state = {
     /**
@@ -19,7 +19,8 @@ class BooksApp extends React.Component {
     return (
       <div className="app">
       <Switch>
-        <Route exact to={"/"} Component={Home} />
+        <Route exact to={'/'} Component={Home} />
+        <Route exact to={'/search'} Component={Search} />
       </Switch>        
       </div>
     )
