@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch.Route} from 'react-router-dom';
+import {Switch,Route} from 'react-router-dom';
 // import * as BooksAPI from './BooksAPI'
 import Home from './views/Home';
 import Search from './views/Search';
