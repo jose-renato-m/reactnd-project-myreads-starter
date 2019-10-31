@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Shelf from './components/Shelf';
-import FAB from './components/FAB';
+import Shelf from '../components/Shelf';
+import FAB from '../components/FAB';
 
     class Home extends Component {
        render() {
