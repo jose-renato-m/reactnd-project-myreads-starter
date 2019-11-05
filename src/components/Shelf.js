@@ -12,7 +12,7 @@ import Book from './Book';
                 </ol>
               </div>
             </div>
-          )
+          );
         }
     }
      
