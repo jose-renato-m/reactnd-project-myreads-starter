@@ -12,7 +12,6 @@ export const MyContext = React.createContext();
             }
         }
 
-
         render() {
             return (
                 <MyContext.Provider value={{...this.state}}>
