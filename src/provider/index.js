@@ -14,7 +14,11 @@ export const MyContext = React.createContext();
 
 
         render() {
-            return (<h1></h1>)
+            return (
+                <MyContext.Provider value={{...this.state}}>
+                    {this.props.children}
+                </MyContext.Provider>
+            );
         }
     }
 
