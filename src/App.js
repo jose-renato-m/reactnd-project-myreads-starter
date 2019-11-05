@@ -7,9 +7,9 @@ import './App.css';
     render() {
       return (
         <Router>
-          <div>            
+          <div className="app">            
             <Switch>
-              <Route path="/">
+              <Route exact path="/">
                 <Home />
               </Route>
             </Switch>
