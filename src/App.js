@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
 import Home from './views/Home';
 import Search from './views/Search';
 import './App.css';
@@ -7,17 +7,7 @@ import './App.css';
     render() {
       return (
         <Router>
-          <div>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/Search">Search</Link>
-                </li>
-              </ul>
-            </nav>
+          <div>            
             <Switch>
               <Route path="/">
                 <Home />
