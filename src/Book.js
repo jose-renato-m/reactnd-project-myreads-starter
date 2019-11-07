@@ -20,9 +20,7 @@ import React, {Component} from 'react';
                   <div className="book-authors">Harper Lee</div>
                 </div>
             
-            <li>
-                
-              </li>)
+            )
         }
     }
 
