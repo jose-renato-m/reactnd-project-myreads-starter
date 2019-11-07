@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Book from './Book';
 import Shelf from './components/Shelf';
 import FAB from './components/FAB';
 import {getAll} from './BooksAPI';
