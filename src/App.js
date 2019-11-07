@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './views/Home';
+import Home from './Home';
 import Search from './views/Search';
 import './App.css';
   class BooksApp extends React.Component {
