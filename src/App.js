@@ -8,10 +8,7 @@ import './App.css';
       return (
         <div className="app">            
             
-        </div>
-        <Router>
-          
-        </Router>        
+        </div>                
       );
     }
   }
