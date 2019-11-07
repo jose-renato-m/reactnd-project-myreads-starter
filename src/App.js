@@ -7,7 +7,7 @@ import './App.css';
     render() {
       return (
         <div className="app">            
-            
+          <Home />
         </div>                
       );
     }
