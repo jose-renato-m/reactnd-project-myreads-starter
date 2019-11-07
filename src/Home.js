@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Shelf from '../components/Shelf';
-import FAB from '../components/FAB';
-import {getAll} from '../BooksAPI';
+import Shelf from './components/Shelf';
+import FAB from './components/FAB';
+import {getAll} from './BooksAPI';
 
   class Home extends Component {
      async componentDidMount() {
