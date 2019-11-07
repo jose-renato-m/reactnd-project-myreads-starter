@@ -2,17 +2,8 @@ import React, {Component} from 'react';
 import Book from './Book';
 import Shelf from './components/Shelf';
 import FAB from './components/FAB';
-import {getAll} from './BooksAPI';
 
-  class Home extends Component {
-     async componentDidMount() {
-          try {
-            const books = await getAll();
-            console.log(books)
-          } catch(error) {
-              console.log(error)
-          }          
-      }
+  class Home extends Component {     
     render() {
       return (
         <div className="list-books">
