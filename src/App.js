@@ -8,16 +8,7 @@ import './App.css';
       return (
         <Router>
           <div className="app">            
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-            </Switch>
-            <Switch>
-              <Route path="/search">
-                <Search />
-              </Route>
-            </Switch>
+            
           </div>
         </Router>        
       );
