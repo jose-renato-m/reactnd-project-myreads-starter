@@ -17,7 +17,7 @@ import React, {Component} from 'react';
                   </div>
                 </div>
                   <div className="book-title">{book.title}</div>
-                  <div className="book-authors"></div>
+                  <div className="book-authors">{book.authors}</div>
                 </div>            
             );
         }
