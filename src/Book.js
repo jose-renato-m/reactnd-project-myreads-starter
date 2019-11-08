@@ -17,7 +17,7 @@ import React, {Component} from 'react';
                   </div>
                 </div>
                   <div className="book-title"></div>
-                  <div className="book-authors">Harper Lee</div>
+                  <div className="book-authors"></div>
                 </div>            
             );
         }
