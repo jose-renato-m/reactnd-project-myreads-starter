@@ -19,7 +19,9 @@ import './App.css';
       console.log(this.state.books);
       return (
         <div className="app">            
-          <Home />
+          <Home 
+            books={this.state.books}
+          />
         </div>                
       );
     }
