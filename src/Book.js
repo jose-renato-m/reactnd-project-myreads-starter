@@ -16,7 +16,7 @@ import React, {Component} from 'react';
                     </select>
                   </div>
                 </div>
-                  <div className="book-title"></div>
+                  <div className="book-title">{book.title}</div>
                   <div className="book-authors"></div>
                 </div>            
             );
