@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Book from './Book';
 
   class Home extends Component {     
-    render() {
+    render() {      
       return (
         <div className="list-books">
           <div className="list-books-title">
@@ -15,7 +15,7 @@ import Book from './Book';
                 <div className="bookshelf-books">
                   <ol className="books-grid">
                     <li>
-                      
+                      <Book />
                     </li>
                   </ol>
                 </div>
@@ -24,8 +24,13 @@ import Book from './Book';
                 <h2 className="bookshelf-title">Want to Read</h2>
                 <div className="bookshelf-books">
                   <ol className="books-grid">
+                    {
+                      this.props.books
+                        .filter(book => book.shelf === '
+                        wantToRead')
+                    }
                     <li>
-                      
+                    <Book />
                     </li>
                   </ol>
                 </div>
@@ -35,7 +40,7 @@ import Book from './Book';
                 <div className="bookshelf-books">
                   <ol className="books-grid">
                     <li>
-                      
+                    <Book />
                     </li>
                   </ol>
                 </div>
