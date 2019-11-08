@@ -15,8 +15,8 @@ import './App.css';
       })      
     }
 
-    changeShelf = () => {
-      
+    changeShelf = (book, shelf) => {
+      update(book, shelf)
     }
 
     render() {      
