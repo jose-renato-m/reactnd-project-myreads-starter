@@ -16,7 +16,7 @@ import './App.css';
     }
 
     changeShelf = (book, shelf) => {
-      update(book, shelf)
+      BooksAPI.update(book, shelf)
     }
 
     render() {      
