@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Book from './Book';
 
   class Home extends Component {     
-    render() {      
+    render() {                  
       return (
         <div className="list-books">
           <div className="list-books-title">
@@ -26,8 +26,7 @@ import Book from './Book';
                   <ol className="books-grid">
                     {
                       this.props.books
-                        .filter(book => book.shelf === '
-                          wantToRead')
+                        .filter(book => book.shelf === 'wantToRead')
                         .map(book => (
                           <li key={book.id} >
                             <Book />
