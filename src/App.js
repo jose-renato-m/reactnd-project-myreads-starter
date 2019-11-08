@@ -24,6 +24,7 @@ import './App.css';
         <div className="app">            
           <Home 
             books={this.state.books}
+            changeShelf={this.changeShelf}
           />
         </div>                
       );
