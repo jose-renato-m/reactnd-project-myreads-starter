@@ -11,7 +11,7 @@ import './App.css';
 
     componentDidMount() {
       BooksAPI.getAll().then((books) => {
-        this.setState({books})
+        this.setState({ books:books })
       })
     }
 
