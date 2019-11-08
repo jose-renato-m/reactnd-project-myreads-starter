@@ -15,6 +15,10 @@ import './App.css';
       })      
     }
 
+    changeShelf = () => {
+      
+    }
+
     render() {      
       return (
         <div className="app">            
