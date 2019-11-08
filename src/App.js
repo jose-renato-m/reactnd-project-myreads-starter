@@ -15,8 +15,7 @@ import './App.css';
       })      
     }
 
-    render() {
-      console.log(this.state.books);
+    render() {      
       return (
         <div className="app">            
           <Home 
