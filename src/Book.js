@@ -11,7 +11,7 @@ import React, {Component} from 'react';
                       onChange={(event) => this.props.changeShelf(
                         this.props.book, event.target.value
                       )}
-                      value={this.props.actualShelf}
+                      value={this.props.book.shelf}
                     >
                       <option value="move" disabled>Move to...</option>
                       <option value="currentlyReading">Currently Reading</option>
