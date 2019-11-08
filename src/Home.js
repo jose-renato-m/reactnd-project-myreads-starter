@@ -27,11 +27,13 @@ import Book from './Book';
                     {
                       this.props.books
                         .filter(book => book.shelf === '
-                        wantToRead')
-                    }
-                    <li>
-                    <Book />
-                    </li>
+                          wantToRead')
+                        .map(book => (
+                          <li key={book.id} >
+                            <Book />
+                          </li>
+                        ))
+                    }                    
                   </ol>
                 </div>
               </div>
