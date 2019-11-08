@@ -10,7 +10,7 @@ import './App.css';
     }
 
     componentDidMount() {
-      ContactsAPI.getAll().then((books) => {
+      BooksAPI.getAll().then((books) => {
         this.setState({books})
       })
     }
