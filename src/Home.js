@@ -22,6 +22,7 @@ import Book from './Book';
                           <li key={book.id} >
                             <Book 
                               book={book}
+                              changeShelf={this.props.changeShelf}
                             />
                           </li>
                         ))
@@ -40,6 +41,7 @@ import Book from './Book';
                           <li key={book.id} >
                             <Book 
                               book={book}
+                              changeShelf={this.props.changeShelf}
                             />
                           </li>
                         ))
@@ -57,7 +59,8 @@ import Book from './Book';
                         .map(book => (
                           <li key={book.id} >
                             <Book 
-                              book={book} 
+                              book={book}
+                              changeShelf={this.props.changeShelf} 
                             />
                           </li>
                         ))
