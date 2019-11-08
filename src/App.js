@@ -7,7 +7,13 @@ import './App.css';
     state = {
       books: []
     }
-     
+
+    componentDidMount() {
+      ContactsAPI.getAll().then((books) => {
+        this.setState({books})
+      })
+    }
+
     render() {
       return (
         <div className="app">            
