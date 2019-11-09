@@ -26,10 +26,11 @@ import './App.css';
     render() {      
       return (
         <div className="app">            
-          <Home 
+          {/* <Home 
             books={this.state.books}
             changeShelf={this.changeShelf}
-          />
+          /> */}
+          <Search />
         </div>                
       );
     }
