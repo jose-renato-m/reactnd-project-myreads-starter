@@ -22,6 +22,7 @@ import React, {Component} from 'react';
                     type="text"
                     placeholder="Search by title or author"
                     value={this.state.query}
+                    onChange={(event) => this.updateQuery(event.target.value)}
                   />
 
                 </div>
