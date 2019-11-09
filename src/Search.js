@@ -4,6 +4,13 @@ import React, {Component} from 'react';
       state = {
         query: ''
       }
+
+      updateQuery = (query) => {
+        this.setState({
+          query: query
+        })
+      }
+
         render() {
             return (
                 <div className="search-books">
