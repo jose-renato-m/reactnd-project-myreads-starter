@@ -3,6 +3,7 @@ import React, {Component} from 'react';
     class Search extends Component {
       state = {
         query: ''
+        wantedBooks: []
       }
 
       updateQuery = (query) => {
@@ -28,7 +29,11 @@ import React, {Component} from 'react';
                 </div>
                 </div>
                 <div className="search-books-results">
-                  <ol className="books-grid"></ol>
+
+                  <ol className="books-grid">
+
+                  </ol>
+
                 </div>
                 </div>
             )
