@@ -30,7 +30,9 @@ import './App.css';
             books={this.state.books}
             changeShelf={this.changeShelf}
           /> */}
-          <Search />
+          <Search 
+            changeShelf={this.changeShelf}
+          />
         </div>                
       );
     }

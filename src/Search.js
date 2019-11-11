@@ -54,6 +54,7 @@ import * as BooksAPI from './BooksAPI';
                         <li key={wantedBook.id}>
                           <Book
                             book={wantedBook}
+                            changeShelf={this.props.changeShelf}
                           />
                         </li>
                       ))
