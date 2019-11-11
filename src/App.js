@@ -35,11 +35,14 @@ import './App.css';
             books={this.state.books}
             changeShelf={this.changeShelf}
           />
-          )} />           
-          
-          {/*<Search 
-            changeShelf={this.changeShelf}
-          />*/}
+          )} />
+
+          <Route path="/search" render={() => (
+            <Search 
+              changeShelf={this.changeShelf}
+            />
+          )} />         
+
         </div>                
       );
     }
