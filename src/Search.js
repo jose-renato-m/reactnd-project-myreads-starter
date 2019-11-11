@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Book from './Book';
 
 import * as BooksAPI from './BooksAPI';
-import { from } from 'array-flatten';
 
     class Search extends Component {
       state = {
@@ -57,14 +56,17 @@ import { from } from 'array-flatten';
 
                   <ol className="books-grid">
                     {
-                      this.state.wantedBooks.map(wantedBook =>(
-                        <li key={wantedBook.id}>
-                          <Book
-                            book={wantedBook}
-                            changeShelf={this.props.changeShelf}
-                          />
-                        </li>
-                      ))
+                      this.state.wantedBooks.map(wantedBook => {
+                        
+                        return (
+                          <li key={wantedBook.id}>
+                            <Book
+                              book={wantedBook}
+                              changeShelf={this.props.changeShelf}
+                            />
+                          </li>
+                        );
+                      })
                     }
 
                   </ol>
