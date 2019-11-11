@@ -25,6 +25,7 @@ import Book from './Book';
                             <Book 
                               book={book}
                               changeShelf={this.props.changeShelf}
+                              actualShelf="currentlyReading"
                             />
                           </li>
                         ))
@@ -44,6 +45,7 @@ import Book from './Book';
                             <Book 
                               book={book}
                               changeShelf={this.props.changeShelf}
+                              actualShelf="wantToRead"
                             />
                           </li>
                         ))
@@ -62,7 +64,8 @@ import Book from './Book';
                           <li key={book.id} >
                             <Book 
                               book={book}
-                              changeShelf={this.props.changeShelf} 
+                              changeShelf={this.props.changeShelf}
+                              actualShelf="read"
                             />
                           </li>
                         ))
@@ -73,8 +76,8 @@ import Book from './Book';
             </div>
           </div>
           <div className="open-search">
-            <Link 
-              to="/search"
+            <Link
+            to="/search"
             >Add a book</Link>
           </div>
           </div>
