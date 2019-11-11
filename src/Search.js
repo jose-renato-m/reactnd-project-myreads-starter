@@ -12,6 +12,12 @@ import React, {Component} from 'react';
         })
       }
 
+      getWantedBooks = (query) => {
+        BooksAPI.search(query).then((wantedBooks) => {
+          this.setState({ wantedBooks: wantedBooks })
+        })
+      }
+
         render() {
             return (
                 <div className="search-books">
