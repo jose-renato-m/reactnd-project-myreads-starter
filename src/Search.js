@@ -5,7 +5,7 @@ import * as BooksAPI from './BooksAPI';
 
     class Search extends Component {
       state = {
-        query: ''
+        query: '',
         wantedBooks: []
       }
 
