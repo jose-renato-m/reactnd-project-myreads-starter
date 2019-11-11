@@ -13,6 +13,7 @@ import * as BooksAPI from './BooksAPI';
         this.setState({
           query: query
         })
+        this.updateWantedBooks(query);
       }
 
       updateWantedBooks = (query) => {
