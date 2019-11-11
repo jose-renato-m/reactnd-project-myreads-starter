@@ -28,14 +28,18 @@ import './App.css';
 
     render() {      
       return (
-        <div className="app">            
-          {/* <Home 
+        <div className="app">
+
+          <Route exact path="/" render={() => (
+            <Home 
             books={this.state.books}
             changeShelf={this.changeShelf}
-          /> */}
-          <Search 
-            changeShelf={this.changeShelf}
           />
+          )} />           
+          
+          {/*<Search 
+            changeShelf={this.changeShelf}
+          />*/}
         </div>                
       );
     }
