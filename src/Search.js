@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Book from './Book';
 
     class Search extends Component {
       state = {
@@ -37,6 +38,15 @@ import React, {Component} from 'react';
                 <div className="search-books-results">
 
                   <ol className="books-grid">
+                    {
+                      this.state.wantedBooks.map(wantedBook =>(
+                        <li key={wantedBook.id}>
+                          <Book
+                            book={wantedBook}
+                          />
+                        </li>
+                      ))
+                    }
 
                   </ol>
 
