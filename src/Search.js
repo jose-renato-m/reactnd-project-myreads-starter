@@ -58,6 +58,13 @@ import * as BooksAPI from './BooksAPI';
                     {
                       this.state.wantedBooks.map(wantedBook => {
                         let shelf = 'none';
+
+                        this.props.books.map(book => (
+                          book.id === wantedBook.id ?
+                          shelf = book.shelf :
+                          ''
+                        ));
+
                         return (
                           <li key={wantedBook.id}>
                             <Book
