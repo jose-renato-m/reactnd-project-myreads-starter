@@ -40,7 +40,7 @@ import './App.css';
           <Route path="/search" render={() => (
             <Search 
               changeShelf={this.changeShelf}
-              books={this.props.books}
+              books={this.state.books}
             />
           )} />         
 
