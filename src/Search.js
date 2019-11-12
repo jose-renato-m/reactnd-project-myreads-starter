@@ -57,12 +57,13 @@ import * as BooksAPI from './BooksAPI';
                   <ol className="books-grid">
                     {
                       this.state.wantedBooks.map(wantedBook => {
-                        
+                        let shelf = 'none';
                         return (
                           <li key={wantedBook.id}>
                             <Book
                               book={wantedBook}
                               changeShelf={this.props.changeShelf}
+                              actualShelf={shelf}
                             />
                           </li>
                         );
