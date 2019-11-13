@@ -28,16 +28,16 @@ import './App.css';
 
     render() {      
       return (
-        <div className="app">
+        <div className='app'>
 
-          <Route exact path="/" render={() => (
+          <Route exact path='/' render={() => (
             <Home 
             books={this.state.books}
             changeShelf={this.changeShelf}
           />
           )} />
 
-          <Route path="/search" render={() => (
+          <Route path='/search' render={() => (
             <Search 
               changeShelf={this.changeShelf}
               books={this.state.books}

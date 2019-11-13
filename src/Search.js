@@ -33,28 +33,28 @@ import * as BooksAPI from './BooksAPI';
 
         render() {
             return (
-                <div className="search-books">
-                <div className="search-books-bar">
+                <div className='search-books'>
+                <div className='search-books-bar'>
 
                   <Link
-                    to="/"
-                    className="close-search"
+                    to='/'
+                    className='close-search'
                   >Close</Link>
 
-                <div className="search-books-input-wrapper">
+                <div className='search-books-input-wrapper'>
 
                   <input 
-                    type="text"
-                    placeholder="Search by title or author"
+                    type='text'
+                    placeholder='Search by title or author'
                     value={this.state.query}
                     onChange={(event) => this.updateQuery(event.target.value)}
                   />
 
                 </div>
                 </div>
-                <div className="search-books-results">
+                <div className='search-books-results'>
 
-                  <ol className="books-grid">
+                  <ol className='books-grid'>
                     {
                       this.state.wantedBooks.map(wantedBook => {
                         let shelf = 'none';
