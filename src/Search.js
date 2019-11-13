@@ -36,10 +36,10 @@ import * as BooksAPI from './BooksAPI';
                 <div className='search-books'>
                 <div className='search-books-bar'>
 
-                  <link
+                  <Link
                     to='/'
                     className='close-search'
-                  >Close</link>
+                  >Close</Link>
 
                 <div className='search-books-input-wrapper'>
 
