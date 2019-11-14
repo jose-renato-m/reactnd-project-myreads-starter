@@ -23,7 +23,7 @@ import * as BooksAPI from './BooksAPI';
             if (wantedBooks.error) {
               this.setState({ wantedBooks: [] });
             } else {
-              this.setState({ wantedBooks: wantedBooks, query });
+              this.setState({ wantedBooks: wantedBooks });
             }            
           })
         } else {
