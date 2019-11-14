@@ -18,7 +18,7 @@ import * as BooksAPI from './BooksAPI';
       }
 
       updateWantedBooks = (query) => {
-        if (query) {
+        if (query && query !== this.state.query) {
           BooksAPI.search(query).then((wantedBooks) => {
             if (wantedBooks.error) {
               this.setState({ wantedBooks: [] });
