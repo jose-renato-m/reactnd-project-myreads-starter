@@ -30,19 +30,21 @@ import './App.css';
       return (
         <div className='app'>
 
-          <Route exact path='/' render={() => (
-            <Home 
-            books={this.state.books}
-            changeShelf={this.changeShelf}
-          />
-          )} />
-
-          <Route path='/search' render={() => (
-            <Search 
-              changeShelf={this.changeShelf}
+          <Switch>
+            <Route exact path='/' render={() => (
+              <Home 
               books={this.state.books}
+              changeShelf={this.changeShelf}
             />
-          )} />         
+            )} />
+
+            <Route path='/search' render={() => (
+              <Search 
+                changeShelf={this.changeShelf}
+                books={this.state.books}
+              />
+            )} />
+          </Switch>                 
 
         </div>                
       );
