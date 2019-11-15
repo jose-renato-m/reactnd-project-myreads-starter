@@ -46,16 +46,13 @@ import './App.css';
             )} />
           </Switch>                 
 
-        </div>
-        
-        <div className='open-search'>
-        <Link to='/search'>
+          <Link to='/search'>
           <button onClick={() => this.setState({ showSearchPage: true })}>
             Add a book
           </button>
         </Link>
-      </div>
 
+        </div>
       );
     }
   }
