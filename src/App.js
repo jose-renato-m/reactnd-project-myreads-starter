@@ -6,7 +6,6 @@ import Search from './Search';
 
 import * as BooksAPI from './BooksAPI';
 import './App.css';
-import FooterNav from './FooterNav';
 
   class BooksApp extends React.Component {
     state = {
