@@ -2,6 +2,12 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import Book from './Book';
 
+function Home () {
+  return (
+    
+  )
+}
+
   class Home extends Component {     
     render() {                  
       return (
