@@ -70,7 +70,9 @@ function Home (props) {
             </div>
           </div>
         </div>
-      </div>      
+      </div>
+      <div className='open-search'>
+      </div>     
     </div>    
   );
 }  
