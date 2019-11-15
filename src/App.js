@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 
 import Home from './Home';
 import Search from './Search';
@@ -46,7 +46,16 @@ import './App.css';
             )} />
           </Switch>                 
 
-        </div>                
+        </div>
+        
+        <div className='open-search'>
+        <Link to='/search'>
+          <button onClick={() => this.setState({ showSearchPage: true })}>
+            Add a book
+          </button>
+        </Link>
+      </div>
+
       );
     }
   }
