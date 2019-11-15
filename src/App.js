@@ -45,9 +45,6 @@ import FooterNav from './FooterNav';
                 books={this.state.books}
               />
             )} />
-
-          <FooterNav />
-
           </Switch>          
 
         </div>
