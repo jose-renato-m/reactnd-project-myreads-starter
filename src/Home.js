@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Book from './Book';
 
-function Home () {
+function Home (props) {
   return (
     <div className='list-books'>
       <div className='list-books-title'>
@@ -15,13 +15,13 @@ function Home () {
             <div className='bookshelf-books'>
               <ol className='books-grid'>
               {
-                  this.props.books
+                  props.books
                     .filter(book => book.shelf === 'currentlyReading')
                     .map(book => (
                       <li key={book.id} >
                         <Book 
                           book={book}
-                          changeShelf={this.props.changeShelf}
+                          changeShelf={props.changeShelf}
                           actualShelf='currentlyReading'
                         />
                       </li>
@@ -35,13 +35,13 @@ function Home () {
             <div className='bookshelf-books'>
               <ol className='books-grid'>
                 {
-                  this.props.books
+                  props.books
                     .filter(book => book.shelf === 'wantToRead')
                     .map(book => (
                       <li key={book.id} >
                         <Book 
                           book={book}
-                          changeShelf={this.props.changeShelf}
+                          changeShelf={props.changeShelf}
                           actualShelf='wantToRead'
                         />
                       </li>
@@ -55,13 +55,13 @@ function Home () {
             <div className='bookshelf-books'>
               <ol className='books-grid'>
               {
-                  this.props.books
+                  props.books
                     .filter(book => book.shelf === 'read')
                     .map(book => (
                       <li key={book.id} >
                         <Book 
                           book={book}
-                          changeShelf={this.props.changeShelf}
+                          changeShelf={props.changeShelf}
                           actualShelf='read'
                         />
                       </li>
@@ -80,7 +80,7 @@ function Home () {
         </Link>
       </div>
     </div>
-  )
+  );
 }  
 
 export default Home;
