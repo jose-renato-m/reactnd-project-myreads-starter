@@ -71,14 +71,7 @@ function Home (props) {
           </div>
         </div>
       </div>      
-    </div>
-    <footer className='footer-nav'>
-      <div className='footer-nav-button'>
-      <nav>
-      
-      </nav>  
-      </div>        
-    </footer>
+    </div>    
   );
 }  
 
