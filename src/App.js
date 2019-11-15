@@ -1,11 +1,12 @@
 import React from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from './Home';
 import Search from './Search';
 
 import * as BooksAPI from './BooksAPI';
 import './App.css';
+import FooterNav from './FooterNav';
 
   class BooksApp extends React.Component {
     state = {
@@ -44,6 +45,9 @@ import './App.css';
                 books={this.state.books}
               />
             )} />
+
+          <FooterNav />
+
           </Switch>          
 
         </div>
