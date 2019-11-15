@@ -4,6 +4,7 @@ import Book from './Book';
 
 
 function Home (props) {
+  const [showSearchPage, setShowSearchPage] = useState(false);
   return (
     <div className='list-books'>
       <div className='list-books-title'>
