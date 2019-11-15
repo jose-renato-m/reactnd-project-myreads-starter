@@ -76,7 +76,7 @@ function Home (props) {
       </div>
       <div className='open-search'>
         <Link to='/search'>
-          <button onClick={() => this.setState({ showSearchPage: true })}>
+          <button onClick={() => setShowSearchPage(true)}>
             Add a book
           </button>
         </Link>
