@@ -44,13 +44,7 @@ import './App.css';
                 books={this.state.books}
               />
             )} />
-          </Switch>                 
-
-          <Link to='/search'>
-          <button onClick={() => this.setState({ showSearchPage: true })}>
-            Add a book
-          </button>
-        </Link>
+          </Switch>          
 
         </div>
       );
