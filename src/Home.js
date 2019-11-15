@@ -74,7 +74,11 @@ function Home (props) {
     </div>
     <footer className='footer-nav'>
       <nav>
-        
+      <Link to='/search'>
+          <button onClick={() => this.setState({ showSearchPage: true })}>
+            Add a book
+          </button>
+        </Link>
       </nav>    
     </footer>
   );
