@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import Book from './Book';
 
   class Home extends Component {     
-    render() {
-      console.log(this.props.books);                  
+    render() {                  
       return (
         <div className='list-books'>
           <div className='list-books-title'>
