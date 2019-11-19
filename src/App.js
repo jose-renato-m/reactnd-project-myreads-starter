@@ -25,11 +25,7 @@ import './App.css';
             books: books
           })
         })
-      });
-
-      BooksAPI.getAll().then((books) => {
-        this.setState({ books: books})
-      })
+      });      
     }
 
     render() {      
