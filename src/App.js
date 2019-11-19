@@ -24,10 +24,7 @@ import './App.css';
         ...this.state.wantToReadBooks,
         ...this.state.readBooks
       ];
-      const booksWithoutThisBook = books.filter(item => item !== book);
-      book.shelf = shelf;
-      const booksWithUpdatedBook = [...booksWithoutThisBook, book];
-      this.collectBooks(booksWithUpdatedBook);
+      
     }
 
     render() {      
