@@ -19,7 +19,13 @@ import './App.css';
     }
 
     changeShelf = (book, shelf) => {
-      BooksAPI.update(book, shelf);
+      BooksAPI.update(book, shelf).then(() => {
+        BooksAPI.getAll().then((books) => {
+          this.setState({
+            books: books
+          })
+        })
+      });
 
       BooksAPI.getAll().then((books) => {
         this.setState({ books: books})
