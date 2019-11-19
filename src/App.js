@@ -18,14 +18,7 @@ import './App.css';
       })      
     }
 
-    changeShelf(book, shelf) {
-      const books = [
-        ...this.state.currentlyReadingBooks,
-        ...this.state.wantToReadBooks,
-        ...this.state.readBooks
-      ];
-      
-    }
+    
 
     render() {      
       return (
