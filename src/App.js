@@ -10,6 +10,7 @@ import './App.css';
 const booksWithoutThisBook = books.filter(item =>
   item.id !== book.id);
 book.shelf = shelf;
+const booksWithUpdatedBook = [...booksWithoutThisBook, book];
 
   class BooksApp extends React.Component {
     state = {
