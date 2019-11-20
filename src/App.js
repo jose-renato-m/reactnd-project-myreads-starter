@@ -25,7 +25,7 @@ const booksWithUpdatedBook = [...booksWithoutThisBook, book];
 
     changeShelf = (book, shelf) => {
       BooksAPI.update(book, shelf).then(() => 
-      this.setState({ books: [...newBook, book] }));
+      this.setState({ books: [...booksWithUpdatedBook, book] }));
     }
 
     render() {      
