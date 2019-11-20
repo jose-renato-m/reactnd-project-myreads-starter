@@ -7,10 +7,13 @@ import Search from './Search';
 import * as BooksAPI from './BooksAPI';
 import './App.css';
 
+const booksWithoutThisBook = books.filter(item =>
+  item.id !== book.id);
+
   class BooksApp extends React.Component {
     state = {
       books: []
-    }
+    }    
 
     componentDidMount() {
       BooksAPI.getAll().then((books) => {
