@@ -9,6 +9,7 @@ import './App.css';
 
 const booksWithoutThisBook = books.filter(item =>
   item.id !== book.id);
+book.shelf = shelf;
 
   class BooksApp extends React.Component {
     state = {
