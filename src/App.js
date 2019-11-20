@@ -15,17 +15,12 @@ import './App.css';
     componentDidMount() {
       BooksAPI.getAll().then((books) => {
         this.setState({ books: books })
-      })      
+      })
     }
 
     changeShelf = (book, shelf) => {
-      BooksAPI.update(book, shelf).then(() => {
-        BooksAPI.getAll().then((books) => {
-          this.setState({
-            books: books
-          })
-        })
-      });      
+      BooksAPI.update(book, shelf).then(() => 
+      this.setState({ books: [...newBook, book] }));
     }
 
     render() {      
