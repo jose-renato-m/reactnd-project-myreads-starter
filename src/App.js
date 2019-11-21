@@ -5,21 +5,23 @@ import Search from './Search';
 import * as BooksAPI from './BooksAPI';
 import './App.css';
 
-const booksWithoutThisBook = books.filter(item =>
-  item.id !== book.id);
+
 book.shelf = shelf;
 const booksWithUpdatedBook = [...booksWithoutThisBook, book];
 
   class BooksApp extends React.Component {
     state = {
       books: []
-    }    
-
+    }
+    
     componentDidMount() {
       BooksAPI.getAll().then((books) => {
         this.setState({ books: books })
       })
     }
+
+    booksWithoutThisBook = books.filter(item =>
+      item.id !== book.id);
 
     changeShelf = (book, shelf) => {
       BooksAPI.update(book, shelf).then(() => 
