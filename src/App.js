@@ -23,8 +23,7 @@ import './App.css';
             books: books
           })
         })
-      }
-      this.setState({ books: [...booksWithUpdatedBook, book] }));
+      });
     }
 
     render() {      
