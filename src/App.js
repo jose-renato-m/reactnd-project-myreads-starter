@@ -21,7 +21,7 @@ const booksWithUpdatedBook = [...booksWithoutThisBook, book];
     }
 
     booksWithoutThisBook = books.filter(item =>
-      item.id !== book.id);
+      item !== book);
 
     changeShelf = (book, shelf) => {
       BooksAPI.update(book, shelf).then(() => 
