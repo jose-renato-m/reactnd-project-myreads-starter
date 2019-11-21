@@ -35,6 +35,12 @@ function Home (props) {
            {renderBookShelf(props.books.filter((book) => book.shelf === 'currentlyReading'), 'Currently Reading')}
            {renderBookShelf(props.books.filter((book) => book.shelf === 'wantToRead'), 'Want to Read')}
            {renderBookShelf(props.books.filter((book) => book.shelf === 'read'), 'Read')}
+        </div>
+      </div>
+    </div>
+  );
+}
+
           
           <div className='bookshelf'>
             <h2 className='bookshelf-title'>Want to Read</h2>
