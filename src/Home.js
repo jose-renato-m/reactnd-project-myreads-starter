@@ -37,21 +37,16 @@ function Home (props) {
            {renderBookShelf(props.books.filter((book) => book.shelf === 'read'), 'Read')}
         </div>
       </div>
-    </div>
-  );
-}
 
-          
-          
       <div className='open-search'>
         <Link to='/search'>
           <button onClick={() => setShowSearchPage(true)}>
             Add a book
           </button>
         </Link>
-      </div>     
-    </div>    
+      </div>
+    </div>
   );
-}  
+}
 
 export default Home;
