@@ -5,7 +5,8 @@ import Search from './Search';
 import * as BooksAPI from './BooksAPI';
 import './App.css';
 
-
+const booksWithoutThisBook = books.filter(item =>
+  item !== book);
 book.shelf = shelf;
 const booksWithUpdatedBook = [...booksWithoutThisBook, book];
 
@@ -13,15 +14,12 @@ const booksWithUpdatedBook = [...booksWithoutThisBook, book];
     state = {
       books: []
     }
-    
+ 
     componentDidMount() {
       BooksAPI.getAll().then((books) => {
         this.setState({ books: books })
       })
     }
-
-    booksWithoutThisBook = books.filter(item =>
-      item !== book);
 
     changeShelf = (book, shelf) => {
       BooksAPI.update(book, shelf).then(() => 
