@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
 import Book from './Book';
 
-const propTypes = {};
 const defaultProps = {};
 
 
