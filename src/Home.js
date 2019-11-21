@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Book from './Book';
 
+const propTypes = {};
+const defaultProps = {};
+
 
 function Home (props) {
   const [ , setShowSearchPage] = useState(false);
