@@ -9,6 +9,12 @@ const defaultProps = {};
 
 function Home (props) {
   const [ , setShowSearchPage] = useState(false);
+
+  const renderBook = (book) => (
+    <li key={book.id} >
+      <Book book={book} changeShelf={props.changeShelf} actualShelf='currentlyReading' />
+    </li>
+  );
   return (
     <div className='list-books'>
       <div className='list-books-title'>
@@ -24,13 +30,7 @@ function Home (props) {
                   props.books
                     .filter(book => book.shelf === 'currentlyReading')
                     .map(book => (
-                      <li key={book.id} >
-                        <Book 
-                          book={book}
-                          changeShelf={props.changeShelf}
-                          actualShelf='currentlyReading'
-                        />
-                      </li>
+                      
                     ))
                 }
               </ol>
