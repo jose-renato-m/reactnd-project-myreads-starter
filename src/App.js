@@ -5,11 +5,6 @@ import Search from './Search';
 import * as BooksAPI from './BooksAPI';
 import './App.css';
 
-const booksWithoutThisBook = books.filter(item =>
-  item !== book);
-book.shelf = shelf;
-const booksWithUpdatedBook = [...booksWithoutThisBook, book];
-
   class BooksApp extends React.Component {
     state = {
       books: []
