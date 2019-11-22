@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import propTypes from 'prop-types';
 import Book from './Book';
-
-const defaultProps = {};
 
 function Home (props) {
   const [ , setShowSearchPage] = useState(false);
@@ -47,6 +44,4 @@ function Home (props) {
   );
 }
 
-Home.propTypes = propTypes;
-Home.defaultProps = defaultProps;
 export default Home;
