@@ -19,7 +19,7 @@ function Home ({books, changeShelf}) {
       <div className='list-books-content'>
         <div>
           {Object.keys(shelves).map(shelf => (
-            <div className='bookshelf'>
+            <div key={shelf.toString()} className='bookshelf'>
               <h2 className='bookshelf-title'>{shelves[shelf]}</h2>
               <div className='bookshelf-books'>
                 <ol className='books-grid'>
