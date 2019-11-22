@@ -32,7 +32,26 @@ function Home ({books, changeShelf}) {
 
       <div className='list-books-content'>
         <div>
-           
+          {Object.keys(shelves).map(shelf => (
+            <div className='bookshelf'>
+              <h2 className='bookshelf-title'>{shelves[shelf]}</h2>
+              <div className='bookshelf-books'>
+                <ol className='books-grid'>
+                  {books
+                     .filter(book => book.shelf === shelf)
+                     .map(book => (
+                       <li key={book.id}>
+                         <Book
+                           book={book}
+                           changeShelf={changeShelf}
+                           actualShelf={shelf}
+                           />
+                       </li>
+                     ))};
+                </ol>
+          ))
+          
+          }
         </div>
       </div>
 
