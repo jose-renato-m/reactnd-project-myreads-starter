@@ -32,9 +32,7 @@ function Home ({books, changeShelf}) {
 
       <div className='list-books-content'>
         <div>
-           {renderBookShelf(props.books.filter((book) => book.shelf === 'currentlyReading'), 'Currently Reading')}
-           {renderBookShelf(props.books.filter((book) => book.shelf === 'wantToRead'), 'Want to Read')}
-           {renderBookShelf(props.books.filter((book) => book.shelf === 'read'), 'Read')}
+           
         </div>
       </div>
 
