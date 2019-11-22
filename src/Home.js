@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Book from './Book';
 
-function Home (props) {
+function Home ({books, changeShelf}) {  
   const [ , setShowSearchPage] = useState(false);
+  const shelves = {
+    currentlyReading: 'Currently Reading',
+    wantToRead: 'Want to Read',
+    read: 'Read',
+  };
 
   const renderBook = (book) => (
     <li key={book.id} >
