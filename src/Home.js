@@ -16,7 +16,7 @@ function Home (props) {
   );
   const renderBookShelf = (books, title) => (
     <div className='bookshelf'>
-      <h2 className='bookshelf-title'>Currently Reading</h2>
+      <h2 className='bookshelf-title'>{title}</h2>
 
       <div className='bookshelf-books'>
         <ol className='books-grid'> {props.books.filter((book) => book.shelf === 'currentlyReading').map(renderBook)}</ol>
