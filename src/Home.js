@@ -35,9 +35,9 @@ function Home ({books, changeShelf}) {
                        </li>
                      ))};
                 </ol>
-          ))
-          
-          }
+              </div>
+            </div>
+          ))};
         </div>
       </div>
 
