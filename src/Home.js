@@ -10,20 +10,6 @@ function Home ({books, changeShelf}) {
     read: 'Read',
   };
 
-  const renderBook = (book) => (
-    <li key={book.id} >
-      <Book book={book} changeShelf={props.changeShelf} actualShelf='currentlyReading' />
-    </li>
-  );
-  const renderBookShelf = (books, title) => (
-    <div className='bookshelf'>
-      <h2 className='bookshelf-title'>{title}</h2>
-
-      <div className='bookshelf-books'>
-        <ol className='books-grid'> {books.map(renderBook)}</ol>
-      </div>
-    </div>
-  );
   return (
     <div className='list-books'>
       <div className='list-books-title'>
