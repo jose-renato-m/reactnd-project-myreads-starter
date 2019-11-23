@@ -32,7 +32,7 @@ import './App.css';
 
           <Switch>
             <Route exact path='/' render={() => (
-              <Home 
+              <Home               
               books={this.state.books}
               changeShelf={this.changeShelf}
             />
