@@ -1,31 +1,38 @@
-# React ND MyReads
+<h1 align="center">
+  <img src="https://ik.imagekit.io/dfw3q47dv0/React_logo_Y-TTAqZqO.png">
+</h1>
 
-Project 1 of [Udacity's React Nanodegree Program](https://www.udacity.com/course/react-nanodegree--nd019).
+## 📝Description
 
-## For Users
+MyReads is the first project of **Udacity School's React Nanodegree Program** course, and its aims is to create a bookshelf app that allows the user to select and categorize books he/she has read, is currently reading, wants to read.
 
-* The goal of the application is to help you manage the state of a list of books. You have the choice between 3 shelves: **\"Currently Reading\"**, **\"Want to read\"** and **\"read\"**.
-* You can see the state of the books in the main page (path: \"/\").
-* You can search for new books in the \"/search\" page.
-* Use the buttons **Reading**, **Want to Read** and **Read** to move the books to another shelf.
-* **None** allows you remove the book from every shelves.
+---
 
-## For Developers
+## 💻Used Technologies
 
-### Dependencies
+MyReads project has been developed using the following technology:
 
-* Install all the project dependencies with `npm install`
-* Start the development server with `npm start`
-* You will need `react-router-dom`
+- [ReactJS](https://pt-br.reactjs.org/)
 
-The component structure is the following:
+---
+
+## 📁Download
+
+```bash
+
+# Clone the repository
+$ git clone https://github.com/jose-renato-m/reactnd-project-myreads-starter
+
+# Enter into the directory
+$ cd reactnd-project-myreads-starter
+
+# Install dependencies
+$ npm install
+
+# Start the project
+$ npm start
 
 ```
-<App />
-------<Home />
-----------<Book />
-------<Search />
-----------<Book />
-```
-* The main state with the list of searched books (result of the search in the search page) and the list of the books (with shelves) displayed in the main page lives in
-* has its own state for the query
+---
+
+Made with 💙 by José Renato Montagnana 👋🏻 [Get in touch!](https://www.linkedin.com/in/joserenato-devfullstack/)
